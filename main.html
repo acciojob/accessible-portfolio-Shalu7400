@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <header>
+        <h1 role="heading">My Portfolio</h1>
+        <nav role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#about">About</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+                <li role="listitem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <img src="portfolio-image.jpg" alt="A description of the portfolio image" role="img">
+        <p>This is my portfolio. It showcases my work and achievements.</p>
+        
+        <section id="about">
+            <h2 role="heading">About Me</h2>
+            <p>Some information about me and my background.</p>
+        </section>
+        
+        <section id="projects">
+            <h2 role="heading">Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1</li>
+                <li role="listitem">Project 2</li>
+                <li role="listitem">Project 3</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2 role="heading">Contact</h2>
+            <p>You can contact me at shalumishra0709@email.com.</p>
+        </section>
+    </main>
 </body>
-
 </html>
+
